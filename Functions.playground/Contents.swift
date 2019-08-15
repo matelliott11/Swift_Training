@@ -30,4 +30,8 @@ showMessage2(number: 42, name: "matt") // we must pass in a number now
 
 //if a function does not return anything you can add a void in the return
 //Void is different to nil. Void is no value nil is there may or may not be
+//test for Git
+var test = "This is a test"
+
+print(test)
 
