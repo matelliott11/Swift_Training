@@ -79,3 +79,4 @@ func Differance(between firsAmount: Int, and secondAmount: Int) -> Int{
 let result = Differance(between: 27391, and: 7863)
 
 print ("The Differance is: \(result)")
+

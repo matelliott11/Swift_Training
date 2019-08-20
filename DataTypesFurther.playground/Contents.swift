@@ -58,8 +58,8 @@ struct Movie{
         return "\(title) is a \(genera) File directed by \(director) and released in \(releaseYear)"
     }
     //adding another func
-    func TitleRelease() -> String{
-        return ("\(title) was released in \(releaseYear)")
+    func TitleRelease() -> (Title: String, Release: Int){
+        return ("\(title) was released in", releaseYear)
     }
 }
 
@@ -96,3 +96,21 @@ if let result = airlines[bad]{
 
 //add or chnage
 //airlines ["BB" = Bristol Airlines" // this will add new key value]
+
+//TUPELS is just grouping 2 bits on info together rather than useing a Structure
+//we can use the above structure to highlight this we chnage the function TitleRelease to have a named string and INT to Title: String Release: INT
+//returning a tuple from a function
+func randomAlbum () -> (albumtitle: String, length: Int){
+    let title = "blah blah blah"
+    let duration = 3487
+    
+    return (title, duration)
+}
+
+let result = randomAlbum()
+//print (result.1) this uses an array like feature so .1 return the 2nd vvalue
+print (result.albumtitle)
+print (result.length)
+//we can even go simpler by putting in any valuenwe want for the to values returned
+let (nextTitle, length) = randomAlbum()
+print ("Paying next: \(nextTitle) which is: \(length / 60)m \(length % 60)s")

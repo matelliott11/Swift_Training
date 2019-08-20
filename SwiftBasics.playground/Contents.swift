@@ -138,8 +138,8 @@ default:
 
 let bunchOfWords = ["Matt", "Bob", "Keith", "Stu"]
 
-for word in bunchOfWords {
-    print (word)
+for all in bunchOfWords {
+    print (all)
 }
 
 for number in 0..<10 { //not the number or bunch of words is only used in the loop it is not a var or let and canno be used again outsde the loop
